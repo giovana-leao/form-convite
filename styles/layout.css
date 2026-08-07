@@ -47,5 +47,24 @@ main {
   & .main-container {
     max-width: 35rem;
     margin-left: auto;
+    font: var(--text-body-sm);
+    color: var(--text-heading);
+
+    & > .calendar {
+      color: var(--text-heading);
+      font: var(--text-heading-sm);
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      & span {
+        margin-left: .75rem;
+      }
+    }
+
+    & > h1 {
+      font: var(--text-heading-md);
+      color: var(--text-heading);
+      margin-bottom: 2.5rem;
+    }
   }
 }
