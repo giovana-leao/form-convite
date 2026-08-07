@@ -1,0 +1,19 @@
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  gap: auto;
+
+}
+.color-picker input[type="radio"] {
+  display: none;
+}
+.color-picker label {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--input-stroke);
+}

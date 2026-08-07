@@ -10,7 +10,7 @@
 
 aside {
   padding: 3.25rem;
-  max-height: 45.25rem;
+  
   background-image: url(/assets/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,29 +42,42 @@ main {
   padding: 5rem 8.12rem;
   background-color: var(--shape-body);
   border-radius: 0.75rem;
-  margin-right: 1.25rem;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
 
   & .main-container {
+    width: 100%;
     max-width: 35rem;
-    margin-left: auto;
     font: var(--text-body-sm);
-    color: var(--text-heading);
-
-    & > .calendar {
-      color: var(--text-heading);
-      font: var(--text-heading-sm);
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.5rem;
-      & span {
-        margin-left: 0.75rem;
-      }
-    }
+    color: var(--text-body);
+    
+    
 
     & > h1 {
       font: var(--text-heading-md);
       color: var(--text-heading);
       margin-bottom: 2.5rem;
     }
+  }
+}
+.icon-title {
+  margin-top: 3rem;
+  color: var(--text-heading);
+  font: var(--text-heading-sm);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  & span {
+    margin-left: 0.75rem;
+  }
+  & svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: var(--input-placeholder);
   }
 }

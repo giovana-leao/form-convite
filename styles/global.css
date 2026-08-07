@@ -15,7 +15,7 @@
 
   --font-family-open-sans: "Open Sans", sans-serif;
   --text-body-md: 600 16px/normal var(--font-family-open-sans);
-  --text-body-sm: 600 14px/normal var(--font-family-open-sans);
+  --text-body-sm: 400 14px/normal var(--font-family-open-sans);
   --text-body-xs: 600 12px/normal var(--font-family-open-sans);
 
   --text-heading: #F9F9F9;
@@ -30,9 +30,13 @@
   --shape-body: #212427;
   --shape-button: #2D3136;
   --shape-hover: #383D42;
-  
+
 }
 
 body {
   overflow: hidden;
+}
+
+.flex {
+  display: grid;
 }

@@ -1,36 +1,37 @@
 .segmented-control {
   border: 1px solid var(--input-stroke);
   border-radius: 0.5rem;
-
-  appearance: none;
   display: flex;
-  justify-items: center;
+  align-items: center;
+  padding: 0.25rem;
+  height: 48px;
   gap: 0.25rem;
-  text-align: center;
-  padding: 0.82rem;
 
   & input {
-    position: absolute;
     display: none;
-    width: 50%;
-    height: 100%;
-    font-weight: 400;
-    & + label {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font: var(--text-body-md);
-      color: var(--input-placeholder);
-      border-radius: 0.5rem;
-      cursor: pointer;
-    }
   }
-  &:selected {
-    & svg path {
-      stroke: var(--brand-light);
-      font-weight: 600;
-    }
+  & label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 100%; 
+    cursor: pointer;
+    font: 300 var(--text-body-md);
+    color: var(--input-placeholder);
+    border-radius: 0.375rem;
+    transition: none;
+    padding: 10px 18px;
+    
   }
+}
+.segmented-control input[type="radio"]:checked + label {
+  background-color: var(--shape-hover);
+  color: var(--text-heading);
+  font: var(--text-body-md);
+  font-weight: 500;
+}
+.segmented-control input[type="radio"]:checked + label svg {
+  stroke: var(--brand-light);
 }
