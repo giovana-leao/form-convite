@@ -1,0 +1,36 @@
+.segmented-control {
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+
+  appearance: none;
+  display: flex;
+  justify-items: center;
+  gap: 0.25rem;
+  text-align: center;
+  padding: 0.82rem;
+
+  & input {
+    position: absolute;
+    display: none;
+    width: 50%;
+    height: 100%;
+    font-weight: 400;
+    & + label {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: var(--text-body-md);
+      color: var(--input-placeholder);
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+  &:selected {
+    & svg path {
+      stroke: var(--brand-light);
+      font-weight: 600;
+    }
+  }
+}

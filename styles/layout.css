@@ -15,7 +15,7 @@ aside {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 
   & img {
     width: 3.05rem;
@@ -27,21 +27,21 @@ aside {
 
     & h1 {
       font: var(--text-logo);
-      color: #FF598B;
-      margin-bottom: .25rem;
+      color: #ff598b;
+      margin-bottom: 0.25rem;
     }
     & p {
       font: var(--text-body-md);
       font-weight: 300;
       color: var(--text-heading);
     }
-  } 
-}  
+  }
+}
 main {
   overflow: auto;
   padding: 5rem 8.12rem;
   background-color: var(--shape-body);
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   margin-right: 1.25rem;
 
   & .main-container {
@@ -57,7 +57,7 @@ main {
       align-items: center;
       margin-bottom: 1.5rem;
       & span {
-        margin-left: .75rem;
+        margin-left: 0.75rem;
       }
     }
 

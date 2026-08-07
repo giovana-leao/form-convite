@@ -1,7 +1,13 @@
 @import url(fields/index.css);
 
-form {
-  
-
-
+fieldset {
+  border: none;
+  gap: 1rem;
+}
+.input-wrapper {
+  & span {
+    display: block;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+  }
 }
