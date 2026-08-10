@@ -1,19 +1,34 @@
 .radio-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(2.125rem, 1fr));
   gap: 1rem;
   align-items: center;
   justify-items: center;
-  gap: auto;
-
 }
 .color-picker input[type="radio"] {
   display: none;
 }
 .color-picker label {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.125rem;
+  height: 2.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid var(--input-stroke);
+}
+.color-picker label::before {
+  content: "";
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px var(--shape-button);
+}
+.color-picker input[type="radio"]:checked + label::before {
+  box-shadow:
+    0 0 0 4px var(--shape-button),
+    /* 1ª camada: 4px de espaçamento interno */ 0 0 0 6px var(--brand-light);
+}
+.color-picker label:hover::before {
+  box-shadow: 0 0 0 6px var(--shape-hover);
 }
