@@ -1,0 +1,29 @@
+input,
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  padding: 0.82rem 1rem;
+  font: var(--text-body-md);
+  color: var(--input-placeholder);
+  background-color: var(--input-base);
+}
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+  color: var(--text-heading);
+}
+
+.about .flex {
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+
+}

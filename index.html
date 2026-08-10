@@ -178,7 +178,7 @@
 
             <fieldset class="customization">
               <label>Cor principal</label>
-              <div class="radio-wrapper">
+              <div class="color-wrapper">
                 <div class="color-picker">
                   <input type="radio" id="color-blue" name="primary-color" />
                   <label
@@ -258,50 +258,110 @@
                 </div>
               </div>
 
-              <div class="radiowrapper">
+              <div class="input-wrapper">
                 <label>Tema do evento</label>
-                <div class="event-theme">
-                  <input type="radio" id="birthday" name="birthday" />
-                  <img
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <input type="radio" id="birthday" name="theme"/>
+                    <img
                     src="assets/aniversario.png"
                     alt="imagem de bolo de aniversário"
-                  />
-                  <label for="birthday">Aniversário</label>
-                </div>
-                <div class="event-theme">
-                  <input type="radio" id="children" name="children" />
-                  <img
+                    />
+                    <label for="birthday">Aniversário</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="children" name="theme" />
+                    <img
                     src="assets/infantil.png"
                     alt="imagem de festa infantil"
-                  />
-                  <label for="children">Infantil</label>
-                </div>
-                <div class="event-theme">
-                  <input type="radio" id="graduation" name="graduation" />
-                  <img src="assets/formatura.png" alt="imagem de toga" />
-                  <label for="graduation">Formatura</label>
-                </div>
-                <div class="event-theme">
-                  <input type="radio" id="marriage" name="marriage" />
-                  <img src="assets/casamento.png" alt="imagem de alianças" />
-                  <label for="marriage">Formatura</label>
-                </div>
-                <div class="event-theme">
-                  <input type="radio" id="baby-shower" name="baby-shower" />
-                  <img
+                    />
+                    <label for="children">Infantil</label>
+                  </div>
+                  
+                  <div class="radio-inner">
+                    <input type="radio" id="graduation" name="theme" />
+                    <img src="assets/formatura.png" alt="imagem de toga" />
+                    <label for="graduation">Formatura</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="marriage" name="theme" />
+                    <img src="assets/casamento.png" alt="imagem de alianças" />
+                    <label for="marriage">Casamento</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="baby-shower" name="theme" />
+                    <img
                     src="assets/cha-de-bebe.png"
                     alt="imagem de itens de bebê "
-                  />
-                  <label for="baby-shower">Chá de bebê</label>
+                    />
+                    <label for="baby-shower">Chá de bebê</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="bridal-shower" name="theme" />
+                    <img
+                    src="assets/cha-de-panela.png"
+                    alt="imagem de cozinha e utensílios domésticos "
+                    />
+                    <label for="bridal-shower">Chá de panela</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="carnival" name="theme" />
+                    <img
+                    src="assets/carnaval.png"
+                    alt="imagem de itens de carnaval "
+                    />
+                    <label for="carnival">Carnaval</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="easter" name="theme" />
+                    <img
+                    src="assets/pascoa.png"
+                    alt="imagem de coelho da páscoa"
+                    />
+                    <label for="easter">Páscoa</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="june-party" name="theme" />
+                    <img
+                    src="assets/sao-joao.png"
+                    alt="imagem de bandeirinhas de festa junina"
+                    />
+                    <label for="june-party">São João</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="halloween" name="theme" />
+                    <img
+                    src="assets/halloween.png"
+                    alt="imagem de abóbora de halloween"
+                    />
+                    <label for="halloween">Halloween</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="christmas" name="theme" />
+                    <img
+                    src="assets/natal.png"
+                    alt="imagem de presentes de Natal"
+                    />
+                    <label for="christmas">Natal</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" id="another" name="theme" />
+                    <img
+                    src="assets/outro.png"
+                    alt="imagem brinde entre amigos "
+                    />
+                    <label for="another">Outro</label>
+                  </div>
                 </div>
-                <div class="event-theme">
-                  <input type="radio" id="baby-shower" name="baby-shower" />
-                  <img
-                    src="assets/cha-de-bebe.png"
-                    alt="imagem de itens de bebê "
-                  />
-                  <label for="baby-shower">Chá de bebê</label>
+              </div>
+              <div class="switch-wrapper">
+                <label for="style">Estilo</label>
+                <div class="switch-inner">
+                  <input type="checkbox" name="style" id="style">
+                  <button></button>
+                  <span></span>
                 </div>
+              </div>
               </div>
             </fieldset>
           </form>
