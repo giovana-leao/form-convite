@@ -1,0 +1,48 @@
+.switch-wrapper {
+  display: inline-grid;
+  grid-template-columns: max-content max-content;
+  align-items:center;
+  gap: 1.25rem .75rem;
+  width: fit-content;
+  
+  #dark {
+  margin: 0;
+  color: var(--text-heading);
+  }
+}
+
+.switch-wrapper > label:first-child {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  width: 4rem;
+  display: flex;
+}
+
+.switch button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--input-stroke);
+  border: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 3px;
+}
+.switch span {
+  display: block;
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 9999px;
+}
+
+.switch-wrapper label {
+  line-height: 1;
+}
