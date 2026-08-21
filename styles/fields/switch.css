@@ -1,48 +1,58 @@
+.input-container {
+  display: inline;
+}
+
 .switch-wrapper {
-  display: inline-grid;
-  grid-template-columns: max-content max-content;
-  align-items:center;
-  gap: 1.25rem .75rem;
-  width: fit-content;
-  
-  #dark {
-  margin: 0;
-  color: var(--text-heading);
-  }
-}
-
-.switch-wrapper > label:first-child {
-  grid-column: 1 / -1;
-  margin: 0;
-}
-
-.switch {
-  position: relative;
-  width: 4rem;
   display: flex;
+  align-items:center;
+  gap: 1.25rem 0.75rem;
+  height: 48px;
+  width: 176px;
+  padding: 8px 0 8px;
+}
+.switch-wrapper input[type="checkbox"] {
+  display: none;
 }
 
-.switch button {
+.switch-track {
+  position: relative;
+  
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+  margin: 0;
+}
+
+.switch-thumb {
+  position: absolute;
+  top: 3px;
+  margin-left: 3px;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background-color: var(--input-stroke);
-  border: 0;
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  left: 0;
-  transform: translateY(-50%);
-  margin-left: 3px;
-}
-.switch span {
-  display: block;
-  width: 4rem;
-  height: 2rem;
-  border: 1px solid var(--input-stroke);
-  border-radius: 9999px;
+  top: -29%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.switch-wrapper label {
-  line-height: 1;
+.switch-wrapper input[type="checkbox"]:checked + .switch-track {
+  background-color: var(--brand-light);
+}
+.switch-wrapper input[type="checkbox"]:checked + .switch-track .switch-thumb {
+  transform: translateX(2rem);
+  background-color: var(--text-heading);
+}
+
+.switch-text::after {
+  content: "Escuro";
+  font: var(--text-body-sm);
+  color: var(--text-heading);
+}
+
+input[type="checkbox"]:checked ~ .switch-text::after {
+  content: "Claro";
 }

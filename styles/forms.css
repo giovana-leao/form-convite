@@ -19,3 +19,9 @@ fieldset.customization {
   display: flex;
   flex-direction: column;
 }
+
+.form-row {
+  display: flex;
+  align-items: center; 
+  gap: 1rem;           
+}
