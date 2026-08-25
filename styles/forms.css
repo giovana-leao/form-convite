@@ -3,7 +3,6 @@
 fieldset {
   border: none;
   gap: 1rem;
-
 }
 .input-wrapper {
   & span {
@@ -22,6 +21,6 @@ fieldset.customization {
 
 .form-row {
   display: flex;
-  align-items: center; 
-  gap: 1rem;           
+  align-items: center;
+  gap: 1rem;
 }

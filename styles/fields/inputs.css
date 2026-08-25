@@ -25,5 +25,22 @@ textarea:focus {
 .about .flex {
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+}
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaçamento vertical entre as linhas */
+  border: none; /* Opcional: remove a borda padrão do fieldset */
+  padding: 0;
+  width: 100%;
+}
+.data-columns .data {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Divide o espaço 50/50 */
+}
+.data-columns {
+  display: flex;
+  gap: 16px; /* Espaçamento horizontal entre e-mail e telefone */
 }
