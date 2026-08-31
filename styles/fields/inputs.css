@@ -44,3 +44,24 @@ textarea:focus {
   display: flex;
   gap: 16px; /* Espaçamento horizontal entre e-mail e telefone */
 }
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.error small {
+  color: #ff5959;
+  display: inline-block;
+  font: var(--text-body-xs);
+}
+input:placeholder-shown:invalid {
+  border: 1px solid #ff5959;
+}
+.input-wrapper .error {
+  display: none;
+}
+input:placeholder-shown:invalid + .error {
+  display: flex;
+}
