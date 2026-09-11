@@ -1,0 +1,22 @@
+.terms-wrapper {
+  margin-top: 3rem;
+  border-top: 1px solid var(--input-stroke);
+  padding: 2.5rem;
+
+  & strong {
+    font: var(--text-body-sm);
+    font-weight: 500;
+    color: var(--brand-light);
+  }
+}
+.checkbox-wrapper {
+  position: relative;
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+}
+.terms-1 .terms-2 .terms-3 {
+  display: flex;
+}
