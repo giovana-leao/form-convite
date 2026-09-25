@@ -10,7 +10,7 @@
 
 aside {
   padding: 3.25rem;
-  
+
   background-image: url(/assets/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,20 +43,18 @@ main {
   background-color: var(--shape-body);
   border-radius: 0.75rem;
   width: 100%;
+  height: 100%;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
 
-
   & .main-container {
     width: 100%;
     max-width: 35rem;
     font: var(--text-body-sm);
     color: var(--text-body);
-    
-    
 
     & > h1 {
       font: var(--text-heading-md);

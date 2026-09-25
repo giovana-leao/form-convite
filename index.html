@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="input-wrapper flex-1">
-                  <span class="label-title">Tipo</span>
+                  <label class="label-title">Tipo</label>
                   <div class="segmented-control">
                     <input
                       type="radio"
@@ -435,7 +435,7 @@
                     />
                   </svg>
 
-                  <small>Campo obrigatório</span>
+                  <small>Campo obrigatório</small>
                 </div>
               </div>
 
@@ -456,27 +456,38 @@
               </div>
             </fieldset>
 
-             <footer>
+            <footer>
               <div class="terms-wrapper">
                 <div class="terms-item checkbox-wrapper">
                   <div class="checkbox-image"></div>
-                  <input type="checkbox" name="terms-1" id="terms-1">
-                  <label for="terms-1">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+                  <input type="checkbox" name="terms-1" id="terms-1" />
+                  <label for="terms-1"
+                    >Li e concordo com os <strong>Termos e Condições</strong> e
+                    com a <strong>Política de Privacidade</strong></label
+                  >
                 </div>
                 <div class="terms-item checkbox-wrapper">
                   <div class="checkbox-image"></div>
-                  <input type="checkbox" name="terms-2" id="terms-2">
-                  <label for="terms-2">Aceito receber atualizações e promoções por e-mail</label>
+                  <input type="checkbox" name="terms-2" id="terms-2" />
+                  <label for="terms-2"
+                    >Aceito receber atualizações e promoções por e-mail</label
+                  >
                 </div>
                 <div class="terms-item checkbox-wrapper">
                   <div class="checkbox-image"></div>
-                  <input type="checkbox" name="terms-3" id="terms-3">
-                  <label for="terms-3">Aceito receber atualizações e promoções por SMS</label>
+                  <input type="checkbox" name="terms-3" id="terms-3" />
+                  <label for="terms-3"
+                    >Aceito receber atualizações e promoções por SMS</label
+                  >
                 </div>
-
               </div>
             </footer>
-           
+            <div class="actions-wrapper">
+              <button class="btn-primary" type="submit">
+                <img src="../assets/icons/ticket.svg" alt="" />
+                <span>Gerar convite</span>
+              </button>
+            </div>
           </form>
         </div>
       </main>
