@@ -4,10 +4,11 @@
 
 .switch-wrapper {
   display: flex;
-  align-items:center;
+  align-items: center;
+  margin-top: 0.75rem;
   gap: 1.25rem 0.75rem;
-  height: 48px;
-  width: 176px;
+  height: 3rem;
+  width: 11rem;
   padding: 8px 0 8px;
 }
 .switch-wrapper input[type="checkbox"] {
@@ -16,9 +17,9 @@
 
 .switch-track {
   position: relative;
-  
-  width: 4rem;
-  height: 2rem;
+
+  width: 4.16rem;
+  height: 2.16rem;
   cursor: pointer;
   background-color: var(--input-base);
   border: 1px solid var(--input-stroke);
@@ -29,14 +30,16 @@
 
 .switch-thumb {
   position: absolute;
-  top: 3px;
+
   margin-left: 3px;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background-color: var(--input-stroke);
-  top: -29%;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  top: -27%;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .switch-wrapper input[type="checkbox"]:checked + .switch-track {
