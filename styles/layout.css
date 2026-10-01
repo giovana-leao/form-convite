@@ -11,7 +11,7 @@
 aside {
   padding: 3.25rem;
 
-  background-image: url(/assets/Background.png);
+  background-image: url(../assets/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
